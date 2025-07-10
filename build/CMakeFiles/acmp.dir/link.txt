@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/acmp.dir/hello.cpp.o -o Debug/acmp  -Wl,-rpath,/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/SDL vendored/SDL/libSDL3.so.0.3.0 /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so 

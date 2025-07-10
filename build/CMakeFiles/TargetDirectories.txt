@@ -1,0 +1,12 @@
+/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles/imgui.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles/AcademyCityMappingProject.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles/edit_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles/rebuild_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glad/CMakeFiles/glad.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glad/CMakeFiles/edit_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glad/CMakeFiles/rebuild_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/CMakeFiles/edit_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/CMakeFiles/rebuild_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/glm.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/edit_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/rebuild_cache.dir
