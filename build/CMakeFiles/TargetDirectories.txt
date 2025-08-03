@@ -10,3 +10,5 @@
 /home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/glm.dir
 /home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/edit_cache.dir
 /home/petr/Projects/Acedemy-city-mapping-project/build/vendored/glm/glm/CMakeFiles/rebuild_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/json/CMakeFiles/edit_cache.dir
+/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/json/CMakeFiles/rebuild_cache.dir

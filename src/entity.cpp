@@ -77,3 +77,8 @@ glm::mat4 Entity::GetTransformMatrix()
 {
     return this->matrix;
 }
+
+void Entity::AddChild(Entity child)
+{
+    children.push_back(child);
+}

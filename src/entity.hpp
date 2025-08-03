@@ -5,6 +5,7 @@
 #include "model.hpp"
 #include <vector>
 #include <glm/gtc/quaternion.hpp>
+#include "mesh.hpp"
 
 class Entity
 {
@@ -12,25 +13,25 @@ private:
     std::vector<Entity> children;   
     Entity* parent;
 
-    
     // Transform
     glm::mat4 matrix;
     glm::vec3 position;
     glm::quat rotation;
     glm::vec3 scale;
 
+    
     /**
      * Constructs TRS matrix from `position`, `rotation` and `scale` atributes
      */
     void UpdateTRSMatrix();
-
+    
 public:
-    // TODO: add propper mesh
-    Model tmp_model;
+    Mesh mesh;
 
     Entity();
-    
+
     Entity(Entity* parent);
+    
     
     ~Entity();
 
@@ -63,6 +64,8 @@ public:
     glm::vec3 GetScale();
 
     glm::mat4 GetTransformMatrix();
+    
+    void AddChild(Entity child);
 };
 
 #endif

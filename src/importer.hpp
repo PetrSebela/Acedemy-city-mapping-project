@@ -2,9 +2,11 @@
 #define _IMPORTER_H_
 
 #include "model.hpp"
+#include "entity.hpp"
 #include <string>
 #include <filesystem>
 
+#include <nlohmann/json.hpp>
 
 class Importer
 {
@@ -14,8 +16,9 @@ public:
     Importer(/* args */);
     ~Importer();
 
-    static Model LoadModel(std::string raw_path);
-    static Model LoadModelObj(std::string raw_path);
+    static Entity LoadModel(std::string raw_path);
+    static Entity LoadModelObj(std::string raw_path);
+    static Entity LoadModelGLTF(std::string raw_path);
 };
 
 

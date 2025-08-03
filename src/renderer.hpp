@@ -18,11 +18,6 @@ private:
 
     GLuint program_id;
     GLuint mvp_matrix_id;
-    GLuint texture_id;
-
-    GLuint vertex_buffer;
-    GLuint normal_buffer;
-    GLuint uv_buffer;
 
     glm::vec3 camera_position;
     glm::quat camera_rotation;
@@ -40,9 +35,6 @@ public:
      * Clears pixel buffer
      */
     void Clear();
-
-
-    void UpdateCameraTransform(glm::mat4 transform);
 
     float fov = 90;
     

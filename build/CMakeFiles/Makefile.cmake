@@ -16,6 +16,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/CMakeLists.txt"
   "/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/CMakeLists.txt"
   "/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/CMakeLists.txt"
+  "/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/CMakeLists.txt"
+  "/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/cmake/config.cmake.in"
+  "/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/cmake/nlohmann_jsonConfigVersion.cmake.in"
+  "/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/cmake/pkg-config.pc.in"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
@@ -24,12 +28,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake-3.28/Modules/ExternalProject.cmake"
+  "/usr/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
   "/usr/share/cmake-3.28/Modules/FeatureSummary.cmake"
   "/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake"
@@ -38,6 +45,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -52,6 +60,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "vendored/glad/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vendored/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vendored/glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendored/json/nlohmann_json.pc"
+  "vendored/json/nlohmann_jsonConfigVersion.cmake"
+  "vendored/json/nlohmann_jsonConfig.cmake"
+  "vendored/json/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

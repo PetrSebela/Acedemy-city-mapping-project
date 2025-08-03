@@ -18,6 +18,7 @@ find_package(SDL2 REQUIRED)
 
 add_subdirectory(vendored/glad)			#opengl loader
 add_subdirectory(vendored/glm)			#loading images
+add_subdirectory(vendored/json)			#loading images
 # add_subdirectory(vendored/imgui)		#loading ttf files
 # find_package(imgui REQUIRED)
 
@@ -98,4 +99,4 @@ target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURC
 
 #enet not working yet on linux for some reason
 target_link_libraries("${CMAKE_PROJECT_NAME}" PRIVATE glm 
-	glad imgui SDL2::SDL2)
+	glad imgui SDL2::SDL2 nlohmann_json::nlohmann_json)

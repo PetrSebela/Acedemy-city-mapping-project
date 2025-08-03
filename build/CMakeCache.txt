@@ -388,6 +388,39 @@ HAVE_XSYNC_H:FILEPATH=/usr/include/X11/extensions/sync.h
 //Path to a file.
 HAVE_XTEST_H:FILEPATH=HAVE_XTEST_H-NOTFOUND
 
+//Build the unit tests when BUILD_TESTING is enabled.
+JSON_BuildTests:BOOL=OFF
+
+//Enable CI build targets.
+JSON_CI:BOOL=OFF
+
+//Enable diagnostic positions.
+JSON_Diagnostic_Positions:BOOL=OFF
+
+//Use extended diagnostic messages.
+JSON_Diagnostics:BOOL=OFF
+
+//Disable default integer enum serialization.
+JSON_DisableEnumSerialization:BOOL=OFF
+
+//Place user-defined string literals in the global namespace.
+JSON_GlobalUDLs:BOOL=ON
+
+//Enable implicit conversions.
+JSON_ImplicitConversions:BOOL=ON
+
+//Install CMake targets during install step.
+JSON_Install:BOOL=OFF
+
+//Enable legacy discarded value comparison.
+JSON_LegacyDiscardedValueComparison:BOOL=OFF
+
+//Use non-amalgamated version of the library.
+JSON_MultipleHeaders:BOOL=ON
+
+//Include as system headers (skip for clang-tidy).
+JSON_SystemInclude:BOOL=OFF
+
 //Extra compile options of LibUSB
 LibUSB_COMPILE_OPTIONS:STRING=
 
@@ -402,6 +435,9 @@ LibUSB_LINK_FLAGS:STRING=
 
 //Extra link libraries of LibUSB
 LibUSB_LINK_LIBRARIES:STRING=
+
+//Build C++ modules support
+NLOHMANN_JSON_BUILD_MODULES:BOOL=OFF
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
@@ -1256,6 +1292,15 @@ imgui_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 imgui_SOURCE_DIR:STATIC=/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui
 
+//Value Computed by CMake
+nlohmann_json_BINARY_DIR:STATIC=/home/petr/Projects/Acedemy-city-mapping-project/build/vendored/json
+
+//Value Computed by CMake
+nlohmann_json_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+nlohmann_json_SOURCE_DIR:STATIC=/home/petr/Projects/Acedemy-city-mapping-project/vendored/json
+
 
 ########################
 # INTERNAL cache entries
@@ -1403,7 +1448,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1854,6 +1899,7 @@ LIBC_IS_GLIBC:INTERNAL=1
 LINKER_SUPPORTS_VERSION_SCRIPT:INTERNAL=1
 //Test LINKER_SUPPORTS_WL_NO_UNDEFINED
 LINKER_SUPPORTS_WL_NO_UNDEFINED:INTERNAL=1
+NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=share/cmake/nlohmann_json
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLES2_INCLUDE_DIR

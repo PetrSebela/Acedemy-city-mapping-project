@@ -89,11 +89,22 @@ SDL_Window * setup_window()
 int main(int argc, char* argv[]) 
 {
     SDL_Window *window = setup_window();
-
+    // Entity dragon = Importer::LoadModel("../data/80k_smooth.obj");
+    
+    Entity lantern = Importer::LoadModel("../assets/Lantern/Lantern.gltf");
+    lantern.SetScale(glm::vec3(0.1f));
     Renderer renderer;
-
-    Entity dragon;
-    dragon.tmp_model = Importer::LoadModel("../data/80k_smooth.obj");
+    
+    Entity triangle;
+    Vertex A;
+    A.position = glm::vec3(0,0,0);
+    Vertex B;
+    B.position = glm::vec3(1,0,0);
+    Vertex C;
+    C.position = glm::vec3(0,1,0);
+    std::vector<Vertex> vertices({A,B,C});
+    std::vector<GLuint> indices({0,1,2});
+    triangle.mesh = Mesh(vertices, indices);
 
     float rotation = 0;
     auto past_time = std::chrono::high_resolution_clock::now();
@@ -156,6 +167,13 @@ int main(int argc, char* argv[])
                 {
                     camera_velocity.y -= 1;
                 }
+
+                if(key == SDLK_x)
+                {
+                    use_wireframe = !use_wireframe;
+                    renderer.UseWireframe(use_wireframe);
+                    // camera_velocity.y -= 1;
+                }
             }
 
             if(event.type == SDL_KEYUP && event.key.repeat == 0)
@@ -210,7 +228,8 @@ int main(int argc, char* argv[])
         
         renderer.UpdateCamera(camera_velocity * (float)frame_delta * 0.5f, camera_angle);
         renderer.Clear();
-        renderer.Render(dragon);
+        // renderer.Render(triangle);
+        renderer.Render(lantern);
 
         // ImGui
         ImGui_ImplOpenGL3_NewFrame();

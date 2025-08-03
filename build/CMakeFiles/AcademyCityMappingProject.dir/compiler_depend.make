@@ -4,8 +4,12 @@
 CMakeFiles/AcademyCityMappingProject.dir/src/component.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/component.cpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
@@ -394,11 +398,91 @@ CMakeFiles/AcademyCityMappingProject.dir/src/component.cpp.o: /home/petr/Project
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
+CMakeFiles/AcademyCityMappingProject.dir/src/ebo.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/ebo.cpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/ebo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/vector \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+
 CMakeFiles/AcademyCityMappingProject.dir/src/entity.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/entity.cpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
@@ -788,10 +872,16 @@ CMakeFiles/AcademyCityMappingProject.dir/src/entity.cpp.o: /home/petr/Projects/A
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/importer.cpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/importer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/utils.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
@@ -928,6 +1018,44 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.inl \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/fwd.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/glm.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_relational.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_float.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_quat.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_quat.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_geometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_geometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_common.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_double.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_double_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_float.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_float_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_transform.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_transform.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_trigonometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_trigonometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_relational.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_clip_space.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_clip_space.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_transform.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_transform.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_constants.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_constants.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/constants.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/constants.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/matrix_transform.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/matrix_transform.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.inl \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x2.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/packing.hpp \
@@ -935,17 +1063,69 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec3.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/adl_serializer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/byte_container_with_subtype.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/abi_macros.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/from_json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_chars.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/exceptions.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/hash.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/binary_reader.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/input_adapters.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/json_sax.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/lexer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/parser.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/position_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_custom_base_class.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_pointer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_ref.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_scope.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_unscope.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/end.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/cpp_future.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/detected.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/identity_tag.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/is_sax.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/std_fs.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/type_traits.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/void_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/binary_writer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/output_adapters.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/serializer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_concat.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_escape.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_utils.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/value_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json_fwd.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/ordered_map.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/any \
   /usr/include/c++/13/array \
+  /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -963,6 +1143,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/forward_list.h \
+  /usr/include/c++/13/bits/forward_list.tcc \
   /usr/include/c++/13/bits/fs_dir.h \
   /usr/include/c++/13/bits/fs_fwd.h \
   /usr/include/c++/13/bits/fs_ops.h \
@@ -970,9 +1152,12 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/gslice.h \
+  /usr/include/c++/13/bits/gslice_array.h \
   /usr/include/c++/13/bits/hash_bytes.h \
   /usr/include/c++/13/bits/hashtable.h \
   /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/indirect_array.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -984,6 +1169,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/locale_facets_nonio.h \
   /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/mask_array.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
@@ -1001,7 +1187,9 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/slice_array.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
@@ -1015,10 +1203,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -1029,6 +1224,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/valarray_after.h \
+  /usr/include/c++/13/bits/valarray_array.h \
+  /usr/include/c++/13/bits/valarray_array.tcc \
+  /usr/include/c++/13/bits/valarray_before.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
@@ -1043,6 +1242,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
@@ -1057,6 +1257,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/filesystem \
+  /usr/include/c++/13/forward_list \
   /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
@@ -1065,10 +1266,19 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
+  /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/sstream \
@@ -1093,7 +1303,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/utility \
+  /usr/include/c++/13/valarray \
   /usr/include/c++/13/vector \
+  /usr/include/c++/13/version \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1111,6 +1324,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o: /home/petr/Projects
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -1226,11 +1441,15 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/importer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/renderer.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/scene.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/utils.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
@@ -1412,6 +1631,52 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.inl \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/packing.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/adl_serializer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/byte_container_with_subtype.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/abi_macros.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/from_json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_chars.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/exceptions.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/hash.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/binary_reader.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/input_adapters.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/json_sax.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/lexer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/parser.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/position_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_custom_base_class.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_pointer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_ref.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_scope.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_unscope.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/end.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/cpp_future.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/detected.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/identity_tag.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/is_sax.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/std_fs.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/type_traits.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/void_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/binary_writer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/output_adapters.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/serializer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_concat.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_escape.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_utils.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/value_t.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json_fwd.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/ordered_map.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_assert.h \
   /usr/include/SDL2/SDL_atomic.h \
@@ -1466,13 +1731,19 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/any \
   /usr/include/c++/13/array \
+  /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -1490,15 +1761,20 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/forward_list.h \
+  /usr/include/c++/13/bits/forward_list.tcc \
   /usr/include/c++/13/bits/fs_dir.h \
   /usr/include/c++/13/bits/fs_fwd.h \
   /usr/include/c++/13/bits/fs_ops.h \
   /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/gslice.h \
+  /usr/include/c++/13/bits/gslice_array.h \
   /usr/include/c++/13/bits/hash_bytes.h \
   /usr/include/c++/13/bits/hashtable.h \
   /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/indirect_array.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -1510,6 +1786,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/bits/locale_facets_nonio.h \
   /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/mask_array.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
@@ -1527,7 +1804,9 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/slice_array.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
@@ -1541,10 +1820,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -1555,6 +1841,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/valarray_after.h \
+  /usr/include/c++/13/bits/valarray_array.h \
+  /usr/include/c++/13/bits/valarray_array.tcc \
+  /usr/include/c++/13/bits/valarray_before.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
@@ -1570,6 +1860,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
@@ -1584,6 +1875,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/filesystem \
+  /usr/include/c++/13/forward_list \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/iomanip \
@@ -1591,11 +1883,20 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/math.h \
+  /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/sstream \
@@ -1621,7 +1922,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/utility \
+  /usr/include/c++/13/valarray \
   /usr/include/c++/13/vector \
+  /usr/include/c++/13/version \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1841,6 +2145,407 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o: /home/petr/Projects/Ace
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xsaveoptintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavesintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h
+
+CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/ebo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_exponential.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_vector_relational.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/exponential.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_common.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_geometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/geometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_matrix.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/matrix.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_vectorize.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_decl.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_int_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_uint_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/simd/platform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_integer.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_packing.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_trigonometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/qualifier.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/fwd.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/glm.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/packing.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/trigonometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec4.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
+  /usr/include/c++/13/bits/basic_string.h \
+  /usr/include/c++/13/bits/basic_string.tcc \
+  /usr/include/c++/13/bits/char_traits.h \
+  /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/cxxabi_forced.h \
+  /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/nested_exception.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
+  /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/postypes.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
+  /usr/include/c++/13/bits/string_view.tcc \
+  /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
+  /usr/include/c++/13/cctype \
+  /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/cfloat \
+  /usr/include/c++/13/climits \
+  /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdio \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/string_conversions.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/ios \
+  /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
+  /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/streambuf \
+  /usr/include/c++/13/string \
+  /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/mesh_renderer.cpp \
   /usr/include/stdc-predef.h
@@ -2201,10 +2906,14 @@ CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o: /home/petr/Projects/Ac
 CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/renderer.cpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/renderer.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/utils.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
@@ -2641,9 +3350,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o: /home/petr/Projects
 CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/scene.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
   /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
@@ -3428,6 +4141,629 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/vao.cpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_exponential.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_vector_relational.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/exponential.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_common.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_geometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/geometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_matrix.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/matrix.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_vectorize.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_decl.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_int_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_uint_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/simd/platform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_integer.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_packing.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_trigonometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/qualifier.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/fwd.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/glm.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/packing.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/trigonometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec4.hpp \
+  /usr/include/alloca.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
+  /usr/include/c++/13/cfloat \
+  /usr/include/c++/13/climits \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/vector \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+
+CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.cpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/KHR/khrplatform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_exponential.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_vector_relational.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/exponential.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_common.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_common.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_geometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/geometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_matrix.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/matrix.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_relational.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_vectorize.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_decl.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_int_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_uint_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4_precision.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4_sized.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/simd/platform.h \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_integer.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_packing.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_trigonometric.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/qualifier.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.inl \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/fwd.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/glm.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/packing.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/trigonometric.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec3.hpp \
+  /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec4.hpp \
+  /usr/include/alloca.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
+  /usr/include/c++/13/cfloat \
+  /usr/include/c++/13/climits \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/vector \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/vbo.cpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/src/texture.cpp:
 
@@ -3473,8 +4809,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/movdirintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/lzcntintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/keylockerintrin.h:
@@ -3513,13 +4847,9 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmivlintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmiintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2vlintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmaintrin.h:
 
@@ -3529,7 +4859,121 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512erintrin.h:
 
-/usr/include/c++/13/debug/assertions.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bitalgintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124vnniwintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124fmapsintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx2intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/amxint8intrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/amxcomplexintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16vlintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/adxintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/amxbf16intrin.h:
+
+/usr/include/c++/13/stdlib.h:
+
+/usr/include/SDL2/SDL_video.h:
+
+/usr/include/SDL2/SDL_touch.h:
+
+/usr/include/SDL2/SDL_timer.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnniintrin.h:
+
+/usr/include/SDL2/SDL_thread.h:
+
+/usr/include/SDL2/SDL_system.h:
+
+/usr/include/SDL2/SDL_surface.h:
+
+/usr/include/SDL2/SDL_stdinc.h:
+
+/usr/include/SDL2/SDL_shape.h:
+
+/usr/include/SDL2/SDL_sensor.h:
+
+/usr/include/SDL2/SDL_rwops.h:
+
+/usr/include/SDL2/SDL_rect.h:
+
+/usr/include/SDL2/SDL_quit.h:
+
+/usr/include/SDL2/SDL_power.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h:
+
+/usr/include/SDL2/SDL_platform.h:
+
+/usr/include/SDL2/SDL_misc.h:
+
+/usr/include/SDL2/SDL_metal.h:
+
+/usr/include/SDL2/SDL_log.h:
+
+/usr/include/SDL2/SDL_locale.h:
+
+/usr/include/SDL2/SDL_loadso.h:
+
+/usr/include/SDL2/SDL_keycode.h:
+
+/usr/include/SDL2/SDL_keyboard.h:
+
+/usr/include/SDL2/SDL_haptic.h:
+
+/usr/include/SDL2/SDL_filesystem.h:
+
+/usr/include/SDL2/SDL_events.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h:
+
+/usr/include/SDL2/SDL_error.h:
+
+/usr/include/SDL2/SDL_endian.h:
+
+/usr/include/SDL2/SDL_cpuinfo.h:
+
+/usr/include/SDL2/SDL_audio.h:
+
+/usr/include/SDL2/SDL_atomic.h:
+
+/usr/include/SDL2/SDL.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/renderer.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/imgui.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/imconfig.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends/imgui_impl_sdl2.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/main.cpp:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/13/compare:
 
@@ -3539,13 +4983,23 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/cctype:
 
+/usr/include/SDL2/SDL_version.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.hpp:
+
 /usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/stdio.h:
 
-/usr/include/c++/13/bits/stl_heap.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/uintrintrin.h:
+
+/usr/include/SDL2/SDL_joystick.h:
+
+/usr/include/c++/13/utility:
 
 /usr/include/c++/13/bits/utility.h:
 
@@ -3565,10 +5019,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnniintrin.h:
-
-/usr/include/SDL2/SDL_thread.h:
-
 /usr/include/c++/13/bits/invoke.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
@@ -3581,7 +5031,11 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/cassert:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/home/petr/Projects/Acedemy-city-mapping-project/src/utils.cpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/bits/charconv.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -3597,11 +5051,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x3_precision.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+/usr/include/SDL2/begin_code.h:
 
-/usr/include/SDL2/SDL_touch.h:
+/usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/c++/13/bits/allocator.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/amxtileintrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
 
 /usr/include/c++/13/unordered_map:
 
@@ -3613,21 +5069,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/uintrintrin.h:
-
-/usr/include/SDL2/SDL_joystick.h:
-
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
 /usr/include/alloca.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/internal_iterator.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec4.hpp:
 
@@ -3639,11 +5087,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/matrix_transform.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.inl:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
 
@@ -3660,6 +5104,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/bits/mask_array.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_constants.inl:
 
@@ -3681,19 +5127,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/bits/functexcept.h:
 
+/usr/include/SDL2/SDL_config.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_transform.hpp:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3_sized.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_relational.inl:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx2intrin.h:
-
 /usr/include/c++/13/debug/debug.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_transform.hpp:
-
-/usr/include/SDL2/SDL_video.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_double_precision.hpp:
 
@@ -3727,13 +5171,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/SDL2/SDL_timer.h:
-
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_trigonometric.inl:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/lwpintrin.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_quat.hpp:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2_precision.hpp:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_integer.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_matrix.inl:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4.hpp:
 
 /usr/include/c++/13/ostream:
 
@@ -3749,11 +5197,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x2.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/13/valarray:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/sgxintrin.h:
 
@@ -3761,7 +5211,9 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2_precision.hpp:
 
-/usr/include/SDL2/SDL_keyboard.h:
+/usr/include/SDL2/SDL_blendmode.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/serializer.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/fmaintrin.h:
 
@@ -3773,13 +5225,15 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/binary_reader.hpp:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.inl:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x2_precision.hpp:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x4.hpp:
-
 /usr/include/c++/13/bits/node_handle.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x4.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_uint_sized.hpp:
 
@@ -3799,17 +5253,199 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/tr1/beta_function.tcc:
 
+/usr/include/SDL2/SDL_hints.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3.hpp:
+
+/usr/include/c++/13/forward_list:
+
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
+/usr/include/SDL2/SDL_render.h:
+
+/usr/include/c++/13/bits/stl_algobase.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2_sized.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/vao.cpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.inl:
+
+/usr/include/assert.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2.hpp:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_trigonometric.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3_precision.hpp:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4_precision.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/hash.hpp:
+
+/usr/include/c++/13/bits/valarray_before.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_packing.inl:
+
+/usr/include/c++/13/bits/align.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_decl.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3_precision.hpp:
+
+/usr/include/c++/13/cfloat:
+
+/usr/include/ctype.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/cstdint:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/matrix.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/vertex.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x4.hpp:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_vector_relational.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_ref.hpp:
+
+/usr/include/c++/13/memory:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4_sized.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp:
+
+/usr/include/c++/13/limits:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4_precision.hpp:
+
+/usr/include/c++/13/bits/sstream.tcc:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/begin.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp:
+
+/usr/include/c++/13/bits/valarray_after.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h:
+
+/usr/include/c++/13/streambuf:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2.hpp:
+
+/usr/include/c++/13/cmath:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/scene.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.hpp:
+
+/usr/include/c++/13/tr1/gamma.tcc:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4_precision.hpp:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_int_sized.hpp:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_exponential.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4_sized.hpp:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_geometric.inl:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/exponential.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_vectorize.hpp:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.hpp:
 
-/usr/include/c++/13/bits/basic_string.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4.hpp:
-
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vector_relational.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends/imgui_impl_opengl3.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x2.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/call_std/end.hpp:
 
 /usr/include/c++/13/bit:
 
@@ -3823,120 +5459,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x3.hpp:
 
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/scalar_int_sized.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/exponential.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_vectorize.hpp:
-
-/usr/include/c++/13/bits/stl_construct.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_vector_relational.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_packing.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/compute_vector_decl.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x3_precision.hpp:
-
-/usr/include/c++/13/cfloat:
-
-/usr/include/ctype.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/common.hpp:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/c++/13/cstdint:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include/glad/glad.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x4.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2_sized.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int3.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x3.inl:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/assert.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2.hpp:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/matrix.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2.hpp:
-
-/usr/include/c++/13/cwctype:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.hpp:
-
-/usr/include/SDL2/SDL_version.h:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/SDL2/begin_code.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2_precision.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512pfintrin.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/src/component.cpp:
-
-/usr/include/c++/13/limits:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint4_sized.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/setup.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_exponential.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/src/entity.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int4_sized.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/integer.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_geometric.inl:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/cmath:
-
 /usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/cerrno:
@@ -3947,41 +5469,31 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.hpp:
+/usr/include/inttypes.h:
 
-/usr/include/SDL2/SDL_surface.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/quaternion.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_quat.inl:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_common.inl:
 
-/usr/include/linux/errno.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/SDL2/SDL_misc.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/quaternion_trigonometric.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x3_precision.hpp:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x4_precision.hpp:
-
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec1.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+/usr/include/c++/13/system_error:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/_fixes.hpp:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4.hpp:
 
-/usr/include/c++/13/cwchar:
+/usr/include/c++/13/bits/ostream_insert.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x2.inl:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3_precision.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float4x2_precision.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_int2.hpp:
+
+/usr/include/c++/13/bits/move.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4.hpp:
 
@@ -3995,23 +5507,37 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnnivlintrin.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/output_adapters.hpp:
+
 /usr/include/c++/13/bits/vector.tcc:
 
-/usr/include/SDL2/SDL_rwops.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_chars.hpp:
+
+/usr/include/c++/13/optional:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/c++/13/bits/move.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x4.inl:
 
-/usr/include/c++/13/system_error:
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x4.hpp:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2.hpp:
 
-/usr/include/c++/13/bits/ostream_insert.h:
+/usr/include/c++/13/cwctype:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool3_precision.hpp:
+/usr/include/SDL2/SDL_assert.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/lwpintrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x2_precision.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float3x3.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat4x2.hpp:
 
@@ -4019,19 +5545,15 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/codecvt:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.hpp:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/SDL2/SDL_mutex.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/SDL2/SDL_endian.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_matrix.inl:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/func_integer.inl:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat2x4.hpp:
 
@@ -4047,7 +5569,9 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2.hpp:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x4.hpp:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/position_t.hpp:
+
+/usr/include/c++/13/bits/atomic_base.h:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
@@ -4055,11 +5579,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x2.hpp:
 
+/usr/include/c++/13/version:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/chrono:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3_precision.hpp:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat4x3.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x4_precision.hpp:
-
-/usr/include/c++/13/bits/sstream.tcc:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2_precision.hpp:
 
@@ -4067,19 +5597,23 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.hpp:
-
 /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlintrin.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/ordered_map.hpp:
+
 /home/petr/Projects/Acedemy-city-mapping-project/src/model.hpp:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/imconfig.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlbwintrin.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint3.hpp:
+
+/usr/include/c++/13/bits/gslice.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/stb_image.h:
 
@@ -4095,6 +5629,12 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec3.hpp:
 
+/home/petr/Projects/Acedemy-city-mapping-project/src/mesh.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/primitive_iterator.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/vbo.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/13/bits/localefwd.h:
@@ -4102,22 +5642,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_float2x2.hpp:
 
 /usr/include/c++/13/ext/string_conversions.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h:
-
-/usr/include/c++/13/streambuf:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_bool2.hpp:
-
-/usr/include/c++/13/tr1/gamma.tcc:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4_precision.hpp:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -4129,8 +5653,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double3.hpp:
 
-/usr/include/SDL2/SDL_keycode.h:
-
 /usr/include/c++/13/bits/erase_if.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/qualifier.hpp:
@@ -4141,7 +5663,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float2_precision.hpp:
 
-/usr/include/SDL2/SDL_cpuinfo.h:
+/usr/include/c++/13/bits/stl_numeric.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float3.hpp:
 
@@ -4150,6 +5672,12 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_half.hpp:
 
 /usr/include/c++/13/array:
+
+/usr/include/SDL2/SDL_main.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4.hpp:
 
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_double2_precision.hpp:
 
@@ -4161,19 +5689,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/src/component.hpp:
 
-/home/petr/Projects/Acedemy-city-mapping-project/src/main.cpp:
-
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_uint2.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec2.hpp:
+/usr/include/c++/13/debug/assertions.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_quat.hpp:
-
-/usr/include/SDL2/SDL_rect.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iter_impl.hpp:
 
 /usr/include/c++/13/functional:
 
@@ -4201,6 +5723,12 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
+/usr/include/SDL2/SDL_hidapi.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.hpp:
+
+/usr/include/c++/13/map:
+
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
 /usr/include/c++/13/math.h:
@@ -4208,6 +5736,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_escape.hpp:
 
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
@@ -4219,11 +5749,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/json_fwd.hpp:
+
 /usr/include/c++/13/typeinfo:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
-
 /usr/include/c++/13/vector:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/from_json.hpp:
 
 /usr/include/endian.h:
 
@@ -4259,6 +5791,12 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/stdlib.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16intrin.h:
+
+/usr/include/SDL2/SDL_scancode.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x4_precision.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
@@ -4267,7 +5805,11 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/abi_macros.hpp:
+
 /usr/include/SDL2/SDL_guid.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/vao.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -4287,6 +5829,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/exceptions.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/lexer.hpp:
+
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
@@ -4296,6 +5842,10 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x2.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec4.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/value_t.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bwintrin.h:
 
@@ -4313,6 +5863,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/c++/13/bits/stl_relops.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
@@ -4320,10 +5872,6 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/wchar.h:
 
@@ -4346,6 +5894,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_custom_base_class.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -4383,23 +5933,15 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectintrin.h:
-
-/usr/include/SDL2/SDL_gamecontroller.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avxifmaintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/c++/13/bits/stream_iterator.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/src/utils.cpp:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
@@ -4417,6 +5959,8 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
+/usr/include/c++/13/bits/forward_list.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -4427,9 +5971,27 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
+/usr/include/c++/13/bits/gslice_array.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/13/numeric:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/ebo.cpp:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/ebo.hpp:
+
+/usr/include/c++/13/bits/slice_array.h:
 
 /usr/include/c++/13/bits/specfun.h:
 
@@ -4441,19 +6003,109 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /home/petr/Projects/Acedemy-city-mapping-project/src/utils.hpp:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/adl_serializer.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqintrin.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/byte_container_with_subtype.hpp:
 
-/usr/include/c++/13/bits/codecvt.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/conversions/to_json.hpp:
 
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/input_adapters.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmiintrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/json_sax.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/input/parser.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iteration_proxy.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/iterators/iterator_traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/src/texture.hpp:
 
 /usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/json_pointer.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_scope.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/macro_unscope.hpp:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/cpp_future.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/detected.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/identity_tag.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512pfintrin.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/src/component.cpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/is_sax.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.inl:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/type_traits.hpp:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/void_t.hpp:
+
+/usr/include/SDL2/SDL_messagebox.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/output/binary_writer.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/c++/13/cstring:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_utils.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectintrin.h:
+
+/usr/include/SDL2/SDL_gamecontroller.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/thirdparty/hedley/hedley.hpp:
+
+/usr/include/c++/13/any:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h:
+
+/usr/include/c++/13/algorithm:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/meta/std_fs.hpp:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/13/bits/valarray_array.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqintrin.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/bits/forward_list.h:
+
+/usr/include/SDL2/SDL_mouse.h:
+
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.inl:
+
+/usr/include/c++/13/bits/fs_dir.h:
 
 /usr/include/c++/13/bits/fs_fwd.h:
 
@@ -4465,7 +6117,13 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/bits/fstream.tcc:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x2.hpp:
+
+/usr/include/c++/13/bits/indirect_array.h:
+
 /usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/iterator:
 
 /usr/include/c++/13/bits/istream.tcc:
 
@@ -4481,27 +6139,29 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512cdintrin.h:
+
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
 /usr/include/c++/13/bits/quoted_string.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/valarray_array.tcc:
+
 /usr/include/c++/13/ctime:
 
 /usr/include/c++/13/ext/atomicity.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/13/ext/concurrence.h:
 
 /usr/include/c++/13/filesystem:
 
 /usr/include/c++/13/fstream:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_projection.inl:
-
-/usr/include/c++/13/bits/fs_dir.h:
-
-/usr/include/SDL2/SDL_mouse.h:
 
 /usr/include/c++/13/iomanip:
 
@@ -4513,17 +6173,17 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h:
 
+/usr/include/c++/13/bits/stl_map.h:
+
 /usr/include/c++/13/locale:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/clocale:
 
 /usr/include/c++/13/stdexcept:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/adxintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16vlintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -4531,154 +6191,16 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Ac
 
 /usr/include/pthread.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/vec2.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double2x3.hpp:
-
-/usr/include/SDL2/SDL_hints.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h:
 
 /usr/include/sched.h:
 
+/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include/nlohmann/detail/string_concat.hpp:
+
 /usr/include/wctype.h:
 
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends/imgui_impl_sdl2.h:
+/usr/include/string.h:
 
 /home/petr/Projects/Acedemy-city-mapping-project/src/model.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512cdintrin.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/mat3x2.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends/imgui_impl_opengl3.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/imgui.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/src/renderer.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/gtc/epsilon.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat3x3.hpp:
-
-/home/petr/Projects/Acedemy-city-mapping-project/src/scene.hpp:
-
-/usr/include/SDL2/SDL.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double4x4.hpp:
-
-/usr/include/SDL2/SDL_assert.h:
-
-/usr/include/SDL2/SDL_atomic.h:
-
-/usr/include/SDL2/SDL_audio.h:
-
-/usr/include/SDL2/SDL_blendmode.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_transform.hpp:
-
-/usr/include/SDL2/SDL_config.h:
-
-/usr/include/SDL2/SDL_events.h:
-
-/usr/include/SDL2/SDL_filesystem.h:
-
-/usr/include/SDL2/SDL_haptic.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_mat2x3.hpp:
-
-/usr/include/SDL2/SDL_hidapi.h:
-
-/usr/include/SDL2/SDL_loadso.h:
-
-/usr/include/SDL2/SDL_locale.h:
-
-/usr/include/SDL2/SDL_log.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/vector_float4.hpp:
-
-/usr/include/SDL2/SDL_main.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124fmapsintrin.h:
-
-/usr/include/SDL2/SDL_messagebox.h:
-
-/usr/include/SDL2/SDL_metal.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h:
-
-/usr/include/SDL2/SDL_platform.h:
-
-/usr/include/SDL2/SDL_power.h:
-
-/usr/include/SDL2/SDL_quit.h:
-
-/usr/include/SDL2/SDL_shape.h:
-
-/usr/include/c++/13/bits/stl_algobase.h:
-
-/usr/include/SDL2/SDL_render.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/amxcomplexintrin.h:
-
-/usr/include/SDL2/SDL_sensor.h:
-
-/usr/include/SDL2/SDL_stdinc.h:
-
-/usr/include/SDL2/SDL_system.h:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/ext/matrix_double3x3_precision.hpp:
-
-/usr/include/c++/13/chrono:
-
-/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm/glm/detail/type_vec3.hpp:
-
-/usr/include/inttypes.h:
-
-/usr/include/string.h:
-
-/usr/include/c++/13/stdlib.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/amxbf16intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/amxint8intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/amxtileintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124vnniwintrin.h:
-
-/usr/include/SDL2/SDL_scancode.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16intrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bitalgintrin.h:
-
-/usr/include/SDL2/SDL_error.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h:

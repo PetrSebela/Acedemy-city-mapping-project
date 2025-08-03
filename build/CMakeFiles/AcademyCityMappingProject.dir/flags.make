@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"/home/petr/Projects/Acedemy-city-mapping-project/resources/\"
 
-CXX_INCLUDES = -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include -isystem /usr/include/SDL2
 
 CXX_FLAGS = -g -std=gnu++17
 

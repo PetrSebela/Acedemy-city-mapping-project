@@ -193,6 +193,30 @@ src/component.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/component.cpp.s
 .PHONY : src/component.cpp.s
 
+src/ebo.o: src/ebo.cpp.o
+.PHONY : src/ebo.o
+
+# target to build an object file
+src/ebo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/ebo.cpp.o
+.PHONY : src/ebo.cpp.o
+
+src/ebo.i: src/ebo.cpp.i
+.PHONY : src/ebo.i
+
+# target to preprocess a source file
+src/ebo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/ebo.cpp.i
+.PHONY : src/ebo.cpp.i
+
+src/ebo.s: src/ebo.cpp.s
+.PHONY : src/ebo.s
+
+# target to generate assembly for a file
+src/ebo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/ebo.cpp.s
+.PHONY : src/ebo.cpp.s
+
 src/entity.o: src/entity.cpp.o
 .PHONY : src/entity.o
 
@@ -264,6 +288,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/mesh.o: src/mesh.cpp.o
+.PHONY : src/mesh.o
+
+# target to build an object file
+src/mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o
+.PHONY : src/mesh.cpp.o
+
+src/mesh.i: src/mesh.cpp.i
+.PHONY : src/mesh.i
+
+# target to preprocess a source file
+src/mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.i
+.PHONY : src/mesh.cpp.i
+
+src/mesh.s: src/mesh.cpp.s
+.PHONY : src/mesh.s
+
+# target to generate assembly for a file
+src/mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.s
+.PHONY : src/mesh.cpp.s
 
 src/mesh_renderer.o: src/mesh_renderer.cpp.o
 .PHONY : src/mesh_renderer.o
@@ -408,6 +456,54 @@ src/utils.s: src/utils.cpp.s
 src/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
+
+src/vao.o: src/vao.cpp.o
+.PHONY : src/vao.o
+
+# target to build an object file
+src/vao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o
+.PHONY : src/vao.cpp.o
+
+src/vao.i: src/vao.cpp.i
+.PHONY : src/vao.i
+
+# target to preprocess a source file
+src/vao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.i
+.PHONY : src/vao.cpp.i
+
+src/vao.s: src/vao.cpp.s
+.PHONY : src/vao.s
+
+# target to generate assembly for a file
+src/vao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.s
+.PHONY : src/vao.cpp.s
+
+src/vbo.o: src/vbo.cpp.o
+.PHONY : src/vbo.o
+
+# target to build an object file
+src/vbo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o
+.PHONY : src/vbo.cpp.o
+
+src/vbo.i: src/vbo.cpp.i
+.PHONY : src/vbo.i
+
+# target to preprocess a source file
+src/vbo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.i
+.PHONY : src/vbo.cpp.i
+
+src/vbo.s: src/vbo.cpp.s
+.PHONY : src/vbo.s
+
+# target to generate assembly for a file
+src/vbo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.s
+.PHONY : src/vbo.cpp.s
 
 vendored/imgui/backends/imgui_impl_opengl3.o: vendored/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : vendored/imgui/backends/imgui_impl_opengl3.o
@@ -592,6 +688,9 @@ help:
 	@echo "... src/component.o"
 	@echo "... src/component.i"
 	@echo "... src/component.s"
+	@echo "... src/ebo.o"
+	@echo "... src/ebo.i"
+	@echo "... src/ebo.s"
 	@echo "... src/entity.o"
 	@echo "... src/entity.i"
 	@echo "... src/entity.s"
@@ -601,6 +700,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mesh.o"
+	@echo "... src/mesh.i"
+	@echo "... src/mesh.s"
 	@echo "... src/mesh_renderer.o"
 	@echo "... src/mesh_renderer.i"
 	@echo "... src/mesh_renderer.s"
@@ -619,6 +721,12 @@ help:
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"
+	@echo "... src/vao.o"
+	@echo "... src/vao.i"
+	@echo "... src/vao.s"
+	@echo "... src/vbo.o"
+	@echo "... src/vbo.i"
+	@echo "... src/vbo.s"
 	@echo "... vendored/imgui/backends/imgui_impl_opengl3.o"
 	@echo "... vendored/imgui/backends/imgui_impl_opengl3.i"
 	@echo "... vendored/imgui/backends/imgui_impl_opengl3.s"

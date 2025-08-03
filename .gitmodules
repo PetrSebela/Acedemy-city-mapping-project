@@ -1,0 +1,3 @@
+[submodule "vendored/json"]
+	path = vendored/json
+	url = git@github.com:nlohmann/json.git
