@@ -11,7 +11,7 @@ class Entity
 {
 private:
     std::vector<Entity> children;   
-    Entity* parent;
+    Entity* parent = nullptr;
 
     // Transform
     glm::mat4 matrix;
@@ -27,7 +27,7 @@ private:
     
 public:
     Mesh mesh;
-
+    std::string name;
     Entity();
 
     Entity(Entity* parent);
@@ -66,6 +66,8 @@ public:
     glm::mat4 GetTransformMatrix();
     
     void AddChild(Entity child);
+
+    std::vector<Entity> GetChildren();
 };
 
 #endif

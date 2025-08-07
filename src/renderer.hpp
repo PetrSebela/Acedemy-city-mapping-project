@@ -29,7 +29,7 @@ public:
     /**
      * Renders model
      */
-    void Render(Entity entity);
+    void Render(Entity entity, glm::mat4 offset);
 
     /**
      * Clears pixel buffer

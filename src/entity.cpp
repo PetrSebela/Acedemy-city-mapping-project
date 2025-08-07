@@ -1,4 +1,5 @@
 #include "entity.hpp"
+#include <iostream>
 
 void Entity::UpdateTRSMatrix()
 {
@@ -26,10 +27,7 @@ Entity::~Entity()
 
 void Entity::SetParent(Entity *parent)
 {
-    if(this->parent != nullptr)
-    {
-
-    }
+    this->parent = parent;
 }
 
 void Entity::SetTRS(glm::vec3 position, glm::quat rotation, glm::vec3 scale)
@@ -81,4 +79,9 @@ glm::mat4 Entity::GetTransformMatrix()
 void Entity::AddChild(Entity child)
 {
     children.push_back(child);
+}
+
+std::vector<Entity> Entity::GetChildren()
+{
+    return this->children;
 }

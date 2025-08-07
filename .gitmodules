@@ -1,3 +1,9 @@
 [submodule "vendored/json"]
 	path = vendored/json
 	url = git@github.com:nlohmann/json.git
+[submodule "vendored/glm"]
+	path = vendored/glm
+	url = git@github.com:g-truc/glm.git
+[submodule "vendored/imgui"]
+	path = vendored/imgui
+	url = git@github.com:ocornut/imgui.git

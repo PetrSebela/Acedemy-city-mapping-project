@@ -157,7 +157,7 @@ std::vector<std::vector<unsigned char>> GetBuffers(path path, json root)
 {
     std::vector<std::vector<unsigned char>> buffers;
 
-    for (int i = 0; i < root["buffers"].size(); i++)
+    for (size_t i = 0; i < root["buffers"].size(); i++)
     {        
         std::filesystem::path buffer_file(root["buffers"][i]["uri"]);
         auto buffer = GetBuffer(path / buffer_file);
@@ -167,9 +167,8 @@ std::vector<std::vector<unsigned char>> GetBuffers(path path, json root)
     return buffers;
 }
 
-std::vector<GLuint> GetInts(std::vector<std::vector<unsigned char>> buffers, json gltf, int accesor_index)
+template <typename T> std::vector<GLuint> GetScalars(std::vector<std::vector<unsigned char>> buffers, json gltf, int accesor_index)
 {
-
     json accesor = gltf["accessors"][accesor_index];
     int bufferview_index = accesor["bufferView"];
     json bufferview = gltf["bufferViews"][bufferview_index];
@@ -178,21 +177,27 @@ std::vector<GLuint> GetInts(std::vector<std::vector<unsigned char>> buffers, jso
     int offset = 0; 
     if(bufferview.contains("byteOffset"))
     {
-        offset = bufferview["byteOffset"];
+        offset += (int)bufferview["byteOffset"];
     }
+
+    if(accesor.contains("byteOffset"))
+    {
+        offset += (int)accesor["byteOffset"];
+    }
+
 
     // retrive desired buffer
     auto buffer = buffers[bufferview["buffer"]];
 
-    int length = bufferview["byteLength"];
+    int length = accesor["count"];
 
-    auto buffer_target = (unsigned short*)(buffer.data() + offset);
+    auto buffer_target = (T*)(buffer.data() + offset);
 
     std::vector<GLuint> ints;
 
     for (int i = 0; i < length; i++)
     {
-        ints.push_back(buffer_target[i]);
+        ints.push_back((GLuint)buffer_target[i]);
     }
 
     return ints;
@@ -200,7 +205,6 @@ std::vector<GLuint> GetInts(std::vector<std::vector<unsigned char>> buffers, jso
 
 std::vector<glm::vec3> GetVectors(std::vector<std::vector<unsigned char>> buffers, json gltf, int accesor_index)
 {
-
     json accesor = gltf["accessors"][accesor_index];
     int bufferview_index = accesor["bufferView"];
     json bufferview = gltf["bufferViews"][bufferview_index];
@@ -209,87 +213,137 @@ std::vector<glm::vec3> GetVectors(std::vector<std::vector<unsigned char>> buffer
     int offset = 0; 
     if(bufferview.contains("byteOffset"))
     {
-        offset = bufferview["byteOffset"];
+        offset += (int)bufferview["byteOffset"];
+    }
+    
+    if(accesor.contains("byteOffset"))
+    {
+        offset += (int)accesor["byteOffset"];
     }
 
     // retrive desired buffer
     auto buffer = buffers[bufferview["buffer"]];
 
-    int length = bufferview["byteLength"];
+    int length = accesor["count"];
 
-    auto buffer_target = (glm::vec3*)(buffer.data() + offset);
+    // auto buffer_target = (glm::vec3*)(buffer.data() + offset);
+    auto buffer_target = buffer.data() + offset;
 
-    std::vector<glm::vec3> vectors;
-
-    for (int i = 0; i < length; i++)
+    int stride = sizeof(glm::vec3);
+    if(bufferview.contains("byteStride"))
     {
-        vectors.push_back(buffer_target[i]);
+        stride = bufferview["byteStride"];
+    }
+        
+    std::vector<glm::vec3> vectors;
+    for (int i = 0; i < length; i++)
+    {        
+        auto x = *(glm::vec3*)(buffer_target + i * stride);
+        vectors.push_back(x);
     }
 
     return vectors;
 }
 
-void LoadNodes(Entity parent, json indices, json nodes)
+void LoadNodes(Entity& parent, json children, json nodes, std::vector<Mesh> meshes)
 {
-    for (json::iterator it = indices.begin(); it != indices.end(); ++it) {
+    for (json::iterator it = children.begin(); it != children.end(); ++it) {
         int index = *it;
         json node = nodes[index];
-        Entity e(parent);
+        
+        glm::vec3 translation(0);
+        if(node.count("translation") == 1)
+        {
+            json t = node["translation"];
+            translation = glm::vec3((float)t[0], (float)t[1], (float)t[2]);
+        }
+        
+        // std::cout << "asd" << std::endl;
+        Entity e(&parent);
+        e.SetPosition(translation);
+        
+        if (node.count("name") != 0)
+        {
+            e.name = node["name"];
+        }
 
+        if(node.count("mesh") != 0)
+        {
+            int mesh_index = node["mesh"];
+            e.mesh = meshes[mesh_index];
+            std::cout << "mesh import for: " << e.name << std::endl;
+        }
+
+        LoadNodes(e, node["children"], nodes, meshes);
         parent.AddChild(e);
-        if(node.count("children") == 0)
-            continue;
-
-        LoadNodes(e, node["children"], nodes);
     }
 }
 
 std::vector<Mesh> GetMeshes(json gltf, std::string path)
 {
     std::filesystem::path directory = std::filesystem::path(path).parent_path();
-    auto buffers = GetBuffers(directory, gltf);
+    auto buffers = GetBuffers(directory, gltf); // Loads raw butes from buffer
+    std::cout << "Buffers loaded" << std::endl;
 
     std::vector<Mesh> meshes;
 
-    for (int i = 0; i < gltf["meshes"].size(); i++)
+    for (size_t i = 0; i < gltf["meshes"].size(); i++)
     {
-        json mesh_descriptor = gltf["meshes"][i]["primitives"][0];
-        json attributes = mesh_descriptor["attributes"];
+        Mesh mesh;
 
-
-        
-        // Get positions
-        auto positions = GetVectors(buffers, gltf, attributes["POSITION"]);
-        auto normals = GetVectors(buffers, gltf, attributes["NORMAL"]);
-
-        std::vector<Vertex> vertices(positions.size());
-
-        for (int i = 0; i < vertices.size(); i++)
+        for (size_t primitive_index = 0; primitive_index < gltf["meshes"][i]["primitives"].size(); primitive_index++)
         {
-            vertices[i].position = positions[i];
-            vertices[i].normal = normals[i];
+            json mesh_descriptor = gltf["meshes"][i]["primitives"][primitive_index];
+            json attributes = mesh_descriptor["attributes"];
+
+            // Get positions
+            auto positions = GetVectors(buffers, gltf, attributes["POSITION"]);
+            auto normals = GetVectors(buffers, gltf, attributes["NORMAL"]);
+
+            std::vector<Vertex> vertices(positions.size());
+
+            
+            for (size_t i = 0; i < vertices.size(); i++)
+            {
+                vertices[i].position = positions[i];
+                vertices[i].normal = normals[i];
+            }
+            
+            // Get indices
+            std::vector<GLuint> indices;
+            if( gltf["accessors"][(int)mesh_descriptor["indices"]]["componentType"] == 5123)
+            {
+                indices = GetScalars<unsigned short>(buffers, gltf, mesh_descriptor["indices"]);
+            }
+            if( gltf["accessors"][(int)mesh_descriptor["indices"]]["componentType"] == 5125)
+            {
+                indices = GetScalars<unsigned int>(buffers, gltf, mesh_descriptor["indices"]);
+            }
+
+            Primitive primitive(vertices, indices);
+            mesh.primitives.push_back(primitive);
         }
 
-        // Get indices
-        auto indices = GetInts(buffers, gltf, mesh_descriptor["indices"]);
-
-        Mesh mesh(vertices, indices);
         meshes.push_back(mesh);
     }
+    
     
     return meshes;
 }
 
 Entity Importer::LoadModelGLTF(std::string raw_path)
-{
-    
+{    
     std::ifstream input(raw_path);
     json gltf;
     input >> gltf;
 
     auto meshes = GetMeshes(gltf, raw_path);
+    printf("Total mesh count %li\n", meshes.size());
     
-    Entity scene;   // Root object 
-    scene.mesh = meshes[0];
+    int scene_index = gltf["scene"];
+    json nodes = gltf["scenes"][scene_index]["nodes"];
+
+    Entity scene;   // Root object
+    LoadNodes(scene, nodes, gltf["nodes"], meshes);
     return scene;
 }

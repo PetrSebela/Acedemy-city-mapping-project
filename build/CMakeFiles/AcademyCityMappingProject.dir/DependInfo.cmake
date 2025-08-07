@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o.d"
   "/home/petr/Projects/Acedemy-city-mapping-project/src/mesh_renderer.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o.d"
   "/home/petr/Projects/Acedemy-city-mapping-project/src/model.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o.d"
+  "/home/petr/Projects/Acedemy-city-mapping-project/src/primitive.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o.d"
   "/home/petr/Projects/Acedemy-city-mapping-project/src/renderer.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o.d"
   "/home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o.d"
   "/home/petr/Projects/Acedemy-city-mapping-project/src/texture.cpp" "CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o" "gcc" "CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o.d"

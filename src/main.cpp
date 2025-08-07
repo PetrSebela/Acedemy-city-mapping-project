@@ -42,7 +42,6 @@ void imgui_setup(SDL_Window *window, SDL_GLContext context)
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
-    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;         // IF using Docking Branch
 
     ImGui_ImplSDL2_InitForOpenGL(window, context);
     ImGui_ImplOpenGL3_Init();
@@ -59,8 +58,8 @@ SDL_Window * setup_window()
         "Academy city mapping project",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
-        1920,                               
-        1080,                               
+        1280,                               
+        720,                               
         SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE  
     );
 
@@ -89,22 +88,27 @@ SDL_Window * setup_window()
 int main(int argc, char* argv[]) 
 {
     SDL_Window *window = setup_window();
-    // Entity dragon = Importer::LoadModel("../data/80k_smooth.obj");
-    
-    Entity lantern = Importer::LoadModel("../assets/Lantern/Lantern.gltf");
-    lantern.SetScale(glm::vec3(0.1f));
     Renderer renderer;
+        
+    // Vertex A;
+    // Vertex B;
+    // Vertex C;
+    // A.position = glm::vec3(0,0,0);
+    // B.position = glm::vec3(1,0,0);
+    // C.position = glm::vec3(0,1,0);
+    // std::vector<Vertex> vertices({A,B,C});    
+    // std::vector<GLuint> indices({0,1,2});
+    // Entity lantern;
+    // lantern.mesh = Mesh(vertices, indices);
     
-    Entity triangle;
-    Vertex A;
-    A.position = glm::vec3(0,0,0);
-    Vertex B;
-    B.position = glm::vec3(1,0,0);
-    Vertex C;
-    C.position = glm::vec3(0,1,0);
-    std::vector<Vertex> vertices({A,B,C});
-    std::vector<GLuint> indices({0,1,2});
-    triangle.mesh = Mesh(vertices, indices);
+    // Entity lantern = Importer::LoadModel("../assets/Lantern/Lantern.gltf");
+    // lantern.SetScale(glm::vec3(0.05f));
+
+    Entity lantern = Importer::LoadModel("../assets/Sponza/Sponza.gltf");
+    lantern.SetScale(glm::vec3(0.0025f));
+
+    // Entity lantern = Importer::LoadModel("../assets/Chess/ABeautifulGame.gltf");
+    // lantern.SetScale(glm::vec3(1));
 
     float rotation = 0;
     auto past_time = std::chrono::high_resolution_clock::now();
@@ -114,6 +118,8 @@ int main(int argc, char* argv[])
 
     glm::vec3 camera_velocity(0);
     glm::vec3 camera_angle(0);
+
+    glm::mat4 scene_global = glm::identity<glm::mat4>();
 
     while (running) {
         SDL_Event event;
@@ -214,7 +220,6 @@ int main(int argc, char* argv[])
             {
                 camera_angle.x -= event.motion.yrel * 0.001;
                 camera_angle.y -= event.motion.xrel * 0.001;
-                // printf("%d %d \n", event.motion.xrel, event.motion.yrel);
             }
 
             ImGui_ImplSDL2_ProcessEvent(&event);
@@ -228,8 +233,8 @@ int main(int argc, char* argv[])
         
         renderer.UpdateCamera(camera_velocity * (float)frame_delta * 0.5f, camera_angle);
         renderer.Clear();
-        // renderer.Render(triangle);
-        renderer.Render(lantern);
+
+        renderer.Render(lantern, scene_global);
 
         // ImGui
         ImGui_ImplOpenGL3_NewFrame();

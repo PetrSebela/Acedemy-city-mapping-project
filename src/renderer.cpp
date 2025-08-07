@@ -44,10 +44,10 @@ void Renderer::Clear()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-void Renderer::Render(Entity entity)
+void Renderer::Render(Entity entity, glm::mat4 offset)
 {
     // Projection matrix
-    glm::mat4 model_matrix = entity.GetTransformMatrix();
+    glm::mat4 model_matrix = offset *entity.GetTransformMatrix();
     glm::mat4 projection_matrix = glm::perspective(glm::radians(fov / 2.0), 16.0 / 9.0, 0.1, 100.0);
     glm::mat4 mvp = projection_matrix * camera_transform * model_matrix;
     
@@ -58,6 +58,11 @@ void Renderer::Render(Entity entity)
     glUniformMatrix4fv(m_uniform_id, 1, GL_FALSE, &model_matrix[0][0]);
 
     entity.mesh.Draw();
+
+    for (Entity child : entity.GetChildren())
+    {
+        Render(child, model_matrix);
+    }
 }
 
 void Renderer::UseWireframe(bool status)

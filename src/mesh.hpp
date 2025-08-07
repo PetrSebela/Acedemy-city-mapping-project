@@ -2,24 +2,18 @@
 #define _MESH_H_
 
 #include <vector>
-#include "vertex.hpp"
-#include "vao.hpp"
+#include "primitive.hpp"
 
 class Mesh
 {
 private:
-    std::vector<Vertex> vertices;
-    std::vector<GLuint> indices;
-
-    VAO buffers;
 
 public:
-    Mesh(std::vector<Vertex>& vertices, std::vector<GLuint>& indices);
+    std::vector<Primitive> primitives;
+    
     Mesh();
     ~Mesh();
     void Draw();
-    void Bind();
-    void Unbind();
 };
 
 #endif

@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o.d"
   "CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o"
   "CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o.d"
+  "CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o"
+  "CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o.d"
   "CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o"
   "CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o.d"
   "CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o"

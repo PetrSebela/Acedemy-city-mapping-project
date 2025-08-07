@@ -5,6 +5,7 @@ project(AcademyCityMappingProject)
 set(CMAKE_CXX_STANDARD 20)
 set(SDL_STATIC ON)
 
+add_compile_options(-Wall)
 # add_subdirectory(vendored/SDL)		#window opener
 
 
