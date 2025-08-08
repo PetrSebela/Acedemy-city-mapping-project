@@ -73,6 +73,12 @@
 },
 {
   "directory": "/home/petr/Projects/Acedemy-city-mapping-project/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\\\"/home/petr/Projects/Acedemy-city-mapping-project/resources/\\\" -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include -isystem /usr/include/SDL2 -g -std=gnu++17 -Wall -o CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp",
+  "file": "/home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp",
+  "output": "CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o"
+},
+{
+  "directory": "/home/petr/Projects/Acedemy-city-mapping-project/build",
   "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\\\"/home/petr/Projects/Acedemy-city-mapping-project/resources/\\\" -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include -isystem /usr/include/SDL2 -g -std=gnu++17 -Wall -o CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp",
   "file": "/home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp",
   "output": "CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o"
@@ -106,6 +112,12 @@
   "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\\\"/home/petr/Projects/Acedemy-city-mapping-project/resources/\\\" -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include -isystem /usr/include/SDL2 -g -std=gnu++17 -Wall -o CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp",
   "file": "/home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp",
   "output": "CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o"
+},
+{
+  "directory": "/home/petr/Projects/Acedemy-city-mapping-project/build",
+  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\\\"/home/petr/Projects/Acedemy-city-mapping-project/resources/\\\" -I/home/petr/Projects/Acedemy-city-mapping-project/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glm -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/glad/include -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/imgui/backends -I/home/petr/Projects/Acedemy-city-mapping-project/vendored/json/include -isystem /usr/include/SDL2 -g -std=gnu++17 -Wall -o CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp",
+  "file": "/home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp",
+  "output": "CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o"
 },
 {
   "directory": "/home/petr/Projects/Acedemy-city-mapping-project/build",

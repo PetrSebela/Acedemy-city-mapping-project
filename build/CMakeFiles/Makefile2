@@ -151,7 +151,7 @@ vendored/json/clean:
 CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30 "Built target imgui"
 .PHONY : CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -179,12 +179,12 @@ CMakeFiles/AcademyCityMappingProject.dir/all: vendored/glad/CMakeFiles/glad.dir/
 CMakeFiles/AcademyCityMappingProject.dir/all: vendored/glm/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AcademyCityMappingProject.dir/build.make CMakeFiles/AcademyCityMappingProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target AcademyCityMappingProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target AcademyCityMappingProject"
 .PHONY : CMakeFiles/AcademyCityMappingProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AcademyCityMappingProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AcademyCityMappingProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles 0
 .PHONY : CMakeFiles/AcademyCityMappingProject.dir/rule
@@ -205,7 +205,7 @@ CMakeFiles/AcademyCityMappingProject.dir/clean:
 vendored/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendored/glad/CMakeFiles/glad.dir/build.make vendored/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendored/glad/CMakeFiles/glad.dir/build.make vendored/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=17,18 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=19,20 "Built target glad"
 .PHONY : vendored/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -231,7 +231,7 @@ vendored/glad/CMakeFiles/glad.dir/clean:
 vendored/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendored/glm/glm/CMakeFiles/glm.dir/build.make vendored/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendored/glm/glm/CMakeFiles/glm.dir/build.make vendored/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=19,20 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=21,22 "Built target glm"
 .PHONY : vendored/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.

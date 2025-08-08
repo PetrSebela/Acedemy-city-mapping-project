@@ -16,8 +16,8 @@ private:
      */
     void enableReportGlErrors();
 
-    GLuint program_id;
-    GLuint mvp_matrix_id;
+    // GLuint program_id;
+    // GLuint mvp_matrix_id;
 
     glm::vec3 camera_position;
     glm::quat camera_rotation;

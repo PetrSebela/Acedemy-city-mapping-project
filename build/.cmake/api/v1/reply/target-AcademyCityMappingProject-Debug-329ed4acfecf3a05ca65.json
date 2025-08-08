@@ -161,7 +161,9 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16
 			]
 		}
 	],
@@ -243,7 +245,9 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16
 			]
 		}
 	],
@@ -282,6 +286,12 @@
 		{
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
+			"path" : "src/material.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 8,
+			"compileGroupIndex" : 0,
 			"path" : "src/mesh.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -313,6 +323,12 @@
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
 			"path" : "src/scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 8,
+			"compileGroupIndex" : 0,
+			"path" : "src/shader.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

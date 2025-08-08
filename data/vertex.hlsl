@@ -9,10 +9,11 @@ uniform mat4 MVP;
 uniform mat4 model_transform;
 
 out vec3 v_normal;
+out vec2 v_uv;
 
 void main(){
     gl_Position = MVP * vec4(vertexPosition_modelspace, 1);
     // normal = (model_transform * vec4(normal, 0)).xyz;
     v_normal = normal;
-    // UV = uv;
+    v_uv = uv;
 }

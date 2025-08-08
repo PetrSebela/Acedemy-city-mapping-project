@@ -13,18 +13,8 @@ Renderer::Renderer()
     glDepthFunc(GL_LESS);
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
-
-    // Load shader program
-    program_id = LoadShaders("../data/vertex.hlsl", "../data/fragment.hlsl");
-    glUseProgram(program_id);
-
-    mvp_matrix_id = glGetUniformLocation(program_id, "MVP");
-
-    glm::vec3 light_position(1, 1, -1);
-    GLuint light_uniform_id = glGetUniformLocation(program_id, "light_direction");
-    glUniform3fv(light_uniform_id, 1, &light_position[0]);
     
-    camera_position = glm::vec3(0, 0, -3);
+    camera_position = glm::vec3(0, -0.25, -1);
     camera_rotation = glm::identity<glm::quat>();
 
     camera_transform = glm::identity<glm::mat4>();
@@ -50,14 +40,29 @@ void Renderer::Render(Entity entity, glm::mat4 offset)
     glm::mat4 model_matrix = offset *entity.GetTransformMatrix();
     glm::mat4 projection_matrix = glm::perspective(glm::radians(fov / 2.0), 16.0 / 9.0, 0.1, 100.0);
     glm::mat4 mvp = projection_matrix * camera_transform * model_matrix;
-    
-    // Sends projection matrix to shader
-    glUniformMatrix4fv(mvp_matrix_id, 1, GL_FALSE, &mvp[0][0]);
-    
-    GLuint m_uniform_id = glGetUniformLocation(program_id, "model_transform");
-    glUniformMatrix4fv(m_uniform_id, 1, GL_FALSE, &model_matrix[0][0]);
 
-    entity.mesh.Draw();
+    for (Primitive p: entity.mesh.primitives)
+    {                
+        GLuint program_id = p.Bind();
+        
+        // Sends projection matrix to shader
+        GLuint mvp_matrix_id = glGetUniformLocation(program_id, "MVP");
+        glUniformMatrix4fv(mvp_matrix_id, 1, GL_FALSE, &mvp[0][0]);
+        
+        // Set model transform
+        GLuint m_uniform_id = glGetUniformLocation(program_id, "model_transform");
+        glUniformMatrix4fv(m_uniform_id, 1, GL_FALSE, &model_matrix[0][0]);
+        
+        // set light parameters
+        glm::vec3 light_position(1, 1, -1);
+        GLuint light_uniform_id = glGetUniformLocation(program_id, "light_direction");
+        glUniform3fv(light_uniform_id, 1, &light_position[0]);
+        
+        p.Draw();
+    }
+
+
+    // entity.mesh.Draw();
 
     for (Entity child : entity.GetChildren())
     {

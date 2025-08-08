@@ -6,6 +6,7 @@
 #include <vector>
 #include <glm/gtc/quaternion.hpp>
 #include "mesh.hpp"
+#include "material.hpp"
 
 class Entity
 {
@@ -27,6 +28,7 @@ private:
     
 public:
     Mesh mesh;
+
     std::string name;
     Entity();
 

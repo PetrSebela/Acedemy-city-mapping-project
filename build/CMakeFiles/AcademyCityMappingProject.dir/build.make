@@ -139,10 +139,24 @@ CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/Acedemy-city-mapping-project/src/main.cpp -o CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.s
 
+CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
+CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp
+CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp
+
+CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp > CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.i
+
+CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/Acedemy-city-mapping-project/src/material.cpp -o CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.s
+
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/mesh.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/mesh_renderer.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/mesh_renderer.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/model.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/model.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/primitive.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/primitive.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/renderer.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/renderer.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.i: cmake_force
@@ -223,10 +237,24 @@ CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/Acedemy-city-mapping-project/src/scene.cpp -o CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.s
 
+CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
+CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp
+CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp
+
+CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp > CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.i
+
+CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/Acedemy-city-mapping-project/src/shader.cpp -o CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.s
+
 CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/texture.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/texture.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.i: cmake_force
@@ -240,7 +268,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/utils.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/utils.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.i: cmake_force
@@ -254,7 +282,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/vao.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/vao.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.i: cmake_force
@@ -268,7 +296,7 @@ CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.s: cmake_force
 CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/flags.make
 CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o: /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.cpp
 CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o: CMakeFiles/AcademyCityMappingProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o -MF CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o.d -o CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.o -c /home/petr/Projects/Acedemy-city-mapping-project/src/vbo.cpp
 
 CMakeFiles/AcademyCityMappingProject.dir/src/vbo.cpp.i: cmake_force
@@ -286,12 +314,14 @@ AcademyCityMappingProject_OBJECTS = \
 "CMakeFiles/AcademyCityMappingProject.dir/src/entity.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o" \
+"CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o" \
+"CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o" \
 "CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o" \
@@ -305,12 +335,14 @@ Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/eb
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/entity.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/importer.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/main.cpp.o
+Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/material.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/mesh.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/mesh_renderer.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/model.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/primitive.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/renderer.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/scene.cpp.o
+Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/shader.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/texture.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/utils.cpp.o
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/src/vao.cpp.o
@@ -321,7 +353,7 @@ Debug/AcademyCityMappingProject: vendored/glad/libglad.a
 Debug/AcademyCityMappingProject: libimgui.a
 Debug/AcademyCityMappingProject: /usr/lib/x86_64-linux-gnu/libSDL2.so
 Debug/AcademyCityMappingProject: CMakeFiles/AcademyCityMappingProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Debug/AcademyCityMappingProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/petr/Projects/Acedemy-city-mapping-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Debug/AcademyCityMappingProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AcademyCityMappingProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
